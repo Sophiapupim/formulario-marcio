@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(243, 202, 209);
+}
+
+#page {
+    max-width: 128rem;
+    margin-inline: auto;
+}
+
+
+header {
+    padding-block: 3rem;
+    text-align: center;
+}
+
+fieldset {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+fieldset div {
+    margin-bottom: 1rem;
+
+
+    label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    input {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        color: crimson;
+    }
+
+    input:focus {
+        outline: 2px solid palevioletred ;
+    }
+
+    input::placeholder {
+        color: palevioletred;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        outline: none;
+    }
+
+
+    input[type=checkbox] + label,
+    input[type=radio] + label {
+        display: inline;
+        
+    }
+
+    select {
+        position: 1rem;
+        border-radius: 1rem;
+        outline: none;
+    }
+}
+ 
+button {
+    padding: 1rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+    background: rgb(221, 145, 170);
+    color: rgb(222, 14, 118);
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background: pink;
+    transition: background ;
+}
+
+@media(max-width: 600px) {
+    body {
+        padding-inline: 1rem;
+    }
+}
+
